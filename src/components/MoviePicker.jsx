@@ -5,8 +5,10 @@ const MoviePicker = ({ movies }) => {
     const [movie, setMovie] = useState();
 
     const handleClick = () => {
-        const rand = Math.floor(Math.random() * movies.length) + 1;
-        setMovie(movies[rand]);
+        const unwatchedMovies = movies.filter(movie => movie.watched === false);
+        const rand = Math.floor(Math.random() * unwatchedMovies.length);
+
+        setMovie(unwatchedMovies[rand]);
     }
 
     return (
