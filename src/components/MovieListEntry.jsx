@@ -7,7 +7,7 @@ const MovieListEntry = ({ title, id, watched, toggleMovie, removeMovie }) => {
 
     return (
         <li className="movie-list-entry">
-            <span style={{marginRight: "15px"}}>{title}</span>
+            <span style={{marginRight: "15px", textDecoration: watched ? "line-through" : "none"}}>{title}</span>
             <button className="remove-movie-button" onClick={handleRemove}>X</button>
             <button className="toggle-movie-button" onClick={handleToggle}>O</button>
         </li>
