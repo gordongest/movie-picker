@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import useInputState from "./hooks/useInputState";
 
 const AddMovie = ({ addMovie }) => {
@@ -12,9 +12,9 @@ const AddMovie = ({ addMovie }) => {
 
     return (
         <div className="add-movie">
-            <form action="" onSubmit={handleSubmit}>
-                <input type="text" value={movie} onChange={changeMovie}/>
-                <button type="submit">Add Movie</button>
+            <form className="add-movie-form" onSubmit={handleSubmit}>
+                <input className="add-movie-input" type="text" value={movie} onChange={changeMovie}/>
+                <button className="add-movie-button" type="submit">Add Movie</button>
             </form>
         </div>
     )

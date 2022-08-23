@@ -11,8 +11,8 @@ const MoviePickerApp = ({ defaultMovies }) => {
         <div className="movie-picker-app">
             <h1>What Are We Watching Tonight?</h1>
             <MoviePicker movies={movies}/>
-            <AddMovie movies={movies} addMovie={addMovie}/>
             <MovieList movies={movies} toggleMovie={toggleMovie} removeMovie={removeMovie} />
+            <AddMovie movies={movies} addMovie={addMovie}/>
         </div>
     )
 }
