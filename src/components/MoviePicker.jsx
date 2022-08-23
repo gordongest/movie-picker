@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import SelectedMovie from "./SelectedMovie";
+import '../styles/MoviePicker.css';
 
 const MoviePicker = ({ movies }) => {
     const [movie, setMovie] = useState();

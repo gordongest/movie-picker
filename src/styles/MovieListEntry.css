@@ -1,3 +1,18 @@
 .movie-list-entry {
     text-align: left;
+
+}
+
+.movie-list-entry button {
+    border: none;
+}
+
+.remove-movie-button {
+    color: white;
+    background-color: #F58800;
+}
+
+.toggle-movie-button {
+    color: white;
+    background-color: #266867;
 }
