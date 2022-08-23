@@ -1,5 +1,5 @@
 import React from 'react';
-import useInputState from "./hooks/useInputState";
+import useInputState from "../hooks/useInputState";
 
 const AddMovie = ({ addMovie }) => {
     const [movie, changeMovie, resetMovie] = useInputState("");

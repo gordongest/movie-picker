@@ -2,7 +2,7 @@ import React from 'react';
 import MoviePicker from "./MoviePicker";
 import AddMovie from "./AddMovie";
 import MovieList from "./MovieList";
-import useMovieState from "./hooks/useMovieState";
+import useMovieState from "../hooks/useMovieState";
 
 const MoviePickerApp = ({ defaultMovies }) => {
     const { movies, addMovie, removeMovie, toggleMovie } = useMovieState(defaultMovies);

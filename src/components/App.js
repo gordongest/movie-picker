@@ -1,7 +1,7 @@
 import React from 'react';
-import { defaultMovies } from './defaultMovies';
+import { defaultMovies } from '../defaultMovies';
 import MoviePickerApp from "./MoviePickerApp";
-import './App.css';
+import '../styles/App.css';
 
 const App = () =>
     <div className="App">

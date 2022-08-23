@@ -1,0 +1,3 @@
+.selected-movie h3 {
+    transition: .4s ease-in-out;
+}
